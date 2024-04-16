@@ -1,0 +1,6 @@
+@import url(/vendor/yungifez/artisan-ui/resources/css/app.css);
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
