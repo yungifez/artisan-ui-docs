@@ -4,3 +4,60 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    code {
+        @apply rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm
+    }
+    h1 {
+        @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl
+    }
+    h2 {
+        @apply mt-12 scroll-m-20 border-b pb-2 text-2xl font-semibold tracking-tight first:mt-0
+    }
+    h3 {
+        @apply scroll-m-20 text-2xl font-semibold tracking-tight mt-8
+    }
+    p {
+        @apply leading-7 [&:not(:first-child)]:mt-6
+    }
+    a{
+        @apply underline underline-offset-2
+    }
+
+    blockquote {
+        @apply mt-6 border-l-2 pl-6 italic
+    }
+
+    ul {
+        @apply my-6 ml-6 list-disc [&>li]:mt-2
+    }
+
+    .shiki {
+        @apply p-4 pt-8 rounded-lg border overflow-scroll
+    }
+
+    .shiki>code {
+        @apply bg-transparent flex flex-col w-fit min-w-full
+    }
+
+    .shiki>code>.line {
+        @apply flex-grow inline-block
+    }
+
+    .line.highlight {
+        @apply bg-white/10 min-w-full pr-4 border-l-2 border-white
+    }
+
+    .line.focus {
+        @apply blur-none
+    }
+
+    .highlighted.focus>code>.line:not(.line.focus) {
+        @apply blur-sm transition duration-200
+    }
+
+    .highlighted.focus:hover code>.line:not(.line.focus) {
+        @apply blur-none
+    }
+}

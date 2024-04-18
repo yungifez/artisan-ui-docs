@@ -6,9 +6,15 @@ export default {
   ],
   content: [
     "./resources/**/*.blade.php",
+    "./resources/**/*.blade.md",
     "./resources/**/*.js",
     "./resources/**/*.vue",
     './vendor/yungifez/artisan-ui/resources/**/*.php'
+  ],
+  safelist: [
+    'shiki',
+    'highlight',
+    'focus'
   ],
   theme: {
     extend: {},

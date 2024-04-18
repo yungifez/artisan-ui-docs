@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-    @php(isset($title) ? $title = $title.' |'.config('app.name') : $title = config('app.name'))
+    @php(isset($title) ? $title = $title.' | '.config('app.name') : $title = config('app.name'))
     <title>{{$title}}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -48,7 +48,7 @@
 <body>
     <x-header></x-header>
     <main class="max-w-screen min-h-screen">
-        {{$slot}}
+        {!!$slot!!}
     </main>
     <aside></aside>
     <footer></footer>

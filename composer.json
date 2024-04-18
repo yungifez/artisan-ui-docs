@@ -2,14 +2,19 @@
     "name": "laravel/laravel",
     "type": "project",
     "description": "The skeleton application for the Laravel framework.",
-    "keywords": ["laravel", "framework"],
+    "keywords": [
+        "laravel",
+        "framework"
+    ],
     "license": "MIT",
     "require": {
         "php": "^8.2",
         "laravel/folio": "^1.1",
         "laravel/framework": "^11.0",
         "laravel/tinker": "^2.9",
+        "league/commonmark": "^2.4",
         "livewire/livewire": "^3.4",
+        "snellingio/folio-markdown": "*",
         "yungifez/artisan-ui": "dev-main"
     },
     "require-dev": {

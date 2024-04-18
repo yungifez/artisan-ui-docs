@@ -1,2 +1,3 @@
-<a {{$attributes->class(['transition-colors hover:text-foreground/80 ', 'text-foreground/60' =>
-    !$attributes->has('active'), 'text-foreground' => $attributes->has('active')])}} wire:navigate>{{$slot}}</a>
+<a {{$attributes->class(['transition-colors hover:underline no-underline'])}} wire:navigate
+    :class="$el.getAttribute('href') == window.location.href ? 'text-foreground' : 'text-muted-foreground/80 hover:text-foreground/80'
+    ">{{$slot}}</a>

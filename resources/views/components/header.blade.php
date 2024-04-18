@@ -1,8 +1,9 @@
-<div class="container sticky top-0 bg-background z-10 flex h-14 max-w-screen-2xl items-center border-border/40 border-b">
+<div
+    class="container sticky top-0 bg-background z-10 flex h-14 max-w-screen-2xl items-center border-border/40 border-b">
     <div class="mr-4 hidden md:flex">
         <a href="{{route('home')}}" class="mr-6 flex items-center space-x-2 font-bold">{{config("app.name")}}</a>
         <nav class="flex items-center gap-4 text-sm lg:gap-6">
-            <a class="transition-colors hover:text-foreground/80 text-foreground/60" href="/docs">Docs</a>
+            <x-link href="{{route('docs')}}">Docs</x-link>
             <x-link>Components</x-link>
         </nav>
     </div>
@@ -23,7 +24,7 @@
             </x-slot:trigger>
         </x-aui::dialog>
         <nav class="flex items-center gap-2">
-            <a target="_blank" rel="noreferrer" href="">
+            <a target="_blank" rel="noreferrer" href="https://github.com/yungifez/artisan-ui">
                 <div
                     class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 py-2 w-9 px-0">
                     <i class="fa-brands fa-github"></i>
