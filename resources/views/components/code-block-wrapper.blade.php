@@ -1,12 +1,14 @@
 @props(['theme' => 'github-dark-default', 'language'=>'', 'title'])
-<div class="my-4 top-4 flex relative" x-data>
+<div {{$attributes->class(['my-4 relative'])}} x-data>
+    <div class="absolute flex justify-between w-full top-0 p-3.5">
     @isset($title)
-    <small class="absolute left-5 top-2 text-muted-foreground title">{{$title}}</small>
+    <small class=" text-muted-foreground title">{{$title}}</small>
     @endisset
-    <x-markdown :theme="$theme" class="code-block flex-grow overflow-scroll" x-ref="content">
+    <x-copy-button ::value="$refs.content.innerText" class="ml-auto self-end"></x-copy-button>
+    </div>
+    <x-markdown :theme="$theme" class="code-block flex-grow w-full overflow-scroll" x-ref="content">
 ```{!!$language!!}
 {!!$slot!!}
 ```
     </x-markdown>
-    <x-copy-button ::value="$refs.content.innerText" class="absolute right-8 top-4"></x-copy-button>
 </div>

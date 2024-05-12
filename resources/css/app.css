@@ -1,4 +1,4 @@
-@import url(/vendor/yungifez/artisan-ui/resources/css/app.css);
+@import url(/vendor/yungifez/artisan-ui/resources/css/artisan.css);
 @import "@fortawesome/fontawesome-free/css/all.css";
 
 @tailwind base;
@@ -9,19 +9,24 @@
     code {
         @apply rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm
     }
+
     h1 {
         @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl
     }
+
     h2 {
         @apply mt-12 scroll-m-20 border-b pb-2 text-2xl font-semibold tracking-tight first:mt-0
     }
+
     h3 {
         @apply scroll-m-20 text-2xl font-semibold tracking-tight mt-8
     }
+
     p {
         @apply leading-7 [&:not(:first-child)]:mt-6
     }
-    a{
+
+    a {
         @apply underline underline-offset-2
     }
 
@@ -34,7 +39,7 @@
     }
 
     .shiki {
-        @apply p-4 pt-8 rounded-lg border overflow-scroll
+        @apply p-4 pt-8 rounded-lg border overflow-scroll w-full
     }
 
     .shiki>code {
@@ -42,7 +47,7 @@
     }
 
     .shiki>code>.line {
-        @apply flex-grow inline-block
+        @apply flex-grow inline-block py-1 tracking-tight
     }
 
     .line.highlight {

@@ -1,13 +1,13 @@
 <x-layout>
     <section class="flex flex-col items-center pt-11 md:min-h-[65vh] px-3 justify-center gap-y-6">
         <h1
-            class="text-center capitalize text-3xl font-extrabold leading-tight tracking-tighter md:text-5xl lg:leading-[1.1]">
-            Beautiful blade components for artisans
+            class="text-center capitalize text-3xl font-extrabold leading-tight tracking-tighter md:text-6xl lg:leading-[1.1]">
+            Beautiful components for artisans
         </h1>
-        <h2
-            class="text-muted-foreground capitalize text-lg md:text-xl tracking-wide leading-relaxed text-center md:w-8/12 mx-auto px-3">
+        <h3
+            class="text-muted-foreground capitalize font-normal text-lg md:text-xl mt-0 tracking-wide leading-relaxed text-center md:w-8/12 no-underline mx-auto px-3">
             A fresh new look for blade inspired by Shadcn
-        </h2>
+        </h3>
         <div class="gap-x-2 flex">
             <x-aui::button size="sm" class="font-bold">
                 Get started

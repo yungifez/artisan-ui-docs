@@ -4,7 +4,7 @@ title: Theming
 description: Using CSS Variables for theming.
 ---
 ## How Theming works
-
+For now, theming works only using CSS variables, as shown below
 <x-code-block-wrapper language="html">
 <div class="bg-background text-foreground"></div>
 </x-code-block-wrapper>
@@ -13,11 +13,9 @@ description: Using CSS Variables for theming.
 
 We use a simple `background` and `foreground` convention for colors. The `background` variable is used for the background color of the component and the `foreground` variable is used for the text color.
 
-<Callout className="mt-4">
-
+<x-callout>
 The `background` suffix is omitted when the variable is used for the background color of the component.
-
-</Callout>
+</x-callout>
 
 Given the following CSS variables:
 
@@ -32,11 +30,11 @@ The `background` color of the following component will be `hsl(var(--primary))` 
 <div class="bg-primary text-primary-foreground">Hello</div>
 </x-code-block-wrapper>
 
-<Callout>
+<x-callout>
 
 **CSS variables must be defined without color space function**. See the [Tailwind CSS documentation](https://tailwindcss.com/docs/customizing-colors#using-css-variables) for more information.
 
-</Callout>
+</x-callout>
 
 ### List of variables
 
@@ -77,12 +75,12 @@ Here's the list of variables available for customization:
 --primary-foreground: 210 40% 98%;
 </x-code-block-wrapper>
 
-<x-code-block-wrapper title="Secondary colors for <Button />" language="css">
+<x-code-block-wrapper title="Secondary colors for button" language="css">
 --secondary: 210 40% 96.1%;
 --secondary-foreground: 222.2 47.4% 11.2%;
 </x-code-block-wrapper>
 
-<x-code-block-wrapper title="Used for accents such as hover effects on <DropdownMenuItem>, <SelectItem>...etc" language="css">
+<x-code-block-wrapper title="Used for accents such as hover effects on dropdown menu items, select item...etc" language="css">
 --accent: 210 40% 96.1%;
 --accent-foreground: 222.2 47.4% 11.2%;
 </x-code-block-wrapper>
@@ -135,7 +133,7 @@ You can now use the `warning` utility class in your components.
 
 <x-code-block-wrapper title="app.blade.php" language="tsx /bg-warning/ /text-warning-foreground/
 ">
-<div className="bg-warning text-warning-foreground" ></div>
+<div class="bg-warning text-warning-foreground"></div>
 </x-code-block-wrapper>
 
 ### Other color formats

@@ -1,10 +1,11 @@
 <div
     class="container sticky top-0 bg-background z-10 flex h-14 max-w-screen-2xl items-center border-border/40 border-b">
     <div class="mr-4 hidden md:flex">
-        <a href="{{route('home')}}" class="mr-6 flex items-center space-x-2 font-bold">{{config("app.name")}}</a>
+        <a href="{{route('home')}}"
+            class="mr-6 flex no-underline items-center space-x-2 font-bold">{{config("app.name")}}</a>
         <nav class="flex items-center gap-4 text-sm lg:gap-6">
-            <x-link href="{{route('docs')}}">Docs</x-link>
-            <x-link>Components</x-link>
+            <x-link href="{{'/docs/' . config('aui.latest-version')}}">Docs</x-link>
+            <x-link href="{{'/docs/' . config('aui.latest-version').'/components/accordion'}}">Components</x-link>
         </nav>
     </div>
     <div class="flex flex-1 items-center justify-between space-x-2 md:justify-end">

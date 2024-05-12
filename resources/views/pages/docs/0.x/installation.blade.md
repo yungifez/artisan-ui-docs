@@ -36,9 +36,15 @@ export default {
         </x-code-block-wrapper>
     </li>
     <li>
-    In your CSS file, import the project's Tailwind CSS file
+    In your CSS file, import the project's CSS file
     <x-code-block-wrapper title="app.css" language="css">
-        @import url(/vendor/yungifez/artisan-ui/resources/css/app.css);
+        @import url(/vendor/yungifez/artisan-ui/resources/css/artisan.css);
+    </x-code-block-wrapper>
+    </li>
+    <li>
+    In your JS file, import the project's Javascript file
+    <x-code-block-wrapper title="app.js" language="js">
+        import '/vendor/yungifez/artisan-ui/resources/js/artisan.js'
     </x-code-block-wrapper>
     </li>
     <li>

@@ -25,7 +25,7 @@ class FolioServiceProvider extends ServiceProvider
                 //
             ],
         ]);
-         // Register Folio Markdown at the bottom of the boot method
+     // Register Folio Markdown at the bottom of the boot method
         FolioMarkdown::register();
     }
 }
