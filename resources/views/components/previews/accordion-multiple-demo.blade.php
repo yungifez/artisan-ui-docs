@@ -1,4 +1,4 @@
-<x-aui::accordion type="single" collapsible class="w-full">
+<x-aui::accordion type="multiple" class="w-full">
     <x-aui::accordion-item>
         <x-slot:title>What is Artisan UI</x-slot:title>
         <x-slot:content>
@@ -15,8 +15,8 @@
     <x-aui::accordion-item>
         <x-slot:title>Did any other library inspire this project?</x-slot:title>
         <x-slot:content>
-            Yes. A lot of code was borrowed from Pines UI, and some
-            ideas were gotten from Mary UI.
+            Yes. A lot of code was borrowed from Pines UI,
+            and some ideas were gotten from Mary UI.
         </x-slot:content>
     </x-aui::accordion-item>
 </x-aui::accordion>

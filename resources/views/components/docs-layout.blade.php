@@ -7,6 +7,7 @@ $links = [
 ['href' => $prefix.'/theming', 'text' => 'theming'],
 ['type' => 'header' , 'text' => 'Components'],
 ['href' => $prefix.'/components/accordion', 'text' => 'Accordion'],
+['href' => $prefix.'/components/avatar', 'text' => 'Avatar'],
 ];
 @endphp
 <x-layout :title="$title ?? null">

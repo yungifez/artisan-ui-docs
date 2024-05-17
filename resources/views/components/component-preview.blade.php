@@ -27,8 +27,8 @@ $attributes->get('component')).'.blade.php');
     <x-aui::tabs-content value="code">
         @if ($attributes->has('component'))
         <x-code-block-wrapper language="{{$attributes->get('title') ?? 'blade'}}"
-            title="{{$attributes->get('title') ?? 'Component Code'}}" class="w-full max-h-[350px] overflow-scroll"
-            style="margin-top: 0; margin-bottom: 0;">
+            title="{{$attributes->get('title') ?? 'Component Code'}}"
+            class="w-full h-[350px] max-h-[350px] overflow-scroll" style="margin-top: 0; margin-bottom: 0;">
             {!!$code!!}
         </x-code-block-wrapper>
         @endif

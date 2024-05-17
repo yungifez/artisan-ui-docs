@@ -6,7 +6,7 @@
     @endisset
     <x-copy-button ::value="$refs.content.innerText" class="ml-auto self-end"></x-copy-button>
     </div>
-    <x-markdown :theme="$theme" class="code-block flex-grow w-full overflow-scroll" x-ref="content">
+    <x-markdown :theme="$theme" class="code-block h-full flex-grow w-full overflow-scroll" x-ref="content">
 ```{!!$language!!}
 {!!$slot!!}
 ```

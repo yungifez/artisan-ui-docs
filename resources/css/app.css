@@ -39,7 +39,7 @@
     }
 
     .shiki {
-        @apply p-4 pt-8 rounded-lg border overflow-scroll w-full
+        @apply p-4 pt-8 rounded-lg border overflow-scroll w-full h-full
     }
 
     .shiki>code {
