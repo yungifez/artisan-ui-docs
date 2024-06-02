@@ -1,5 +1,5 @@
 ```blade +parse
-<x-aui::alert>
+<x-aui::alert class="my-2">
     @isset($title)
     <x-slot:title {{$title->attributes}}>{{$title}}</x-slot:title>
     @endisset

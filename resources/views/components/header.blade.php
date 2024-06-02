@@ -1,5 +1,5 @@
 <div
-    class="container sticky top-0 bg-background z-10 flex h-14 max-w-screen-2xl items-center border-border/40 border-b">
+    class="container sticky top-0 bg-background/70 z-10 flex h-14 max-w-screen-2xl items-center border-border/40 border-b backdrop-blur">
     <div class="mr-4 hidden md:flex">
         <a href="{{route('home')}}"
             class="mr-6 flex no-underline items-center space-x-2 font-bold">{{config("app.name")}}</a>

@@ -38,6 +38,26 @@
         @apply my-6 ml-6 list-disc [&>li]:mt-2
     }
 
+    hr {
+        margin: 2rem 0 1rem 0;
+    }
+
+    table {
+        @apply w-full
+    }
+
+    tr {
+        @apply m-0 border-t p-0
+    }
+
+    th {
+        @apply border px-4 py-2 text-left font-bold [&[align=center]]:text-center [&[align=right]]:text-right
+    }
+
+    td {
+        @apply border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right
+    }
+
     .shiki {
         @apply p-4 pt-8 rounded-lg border overflow-scroll w-full h-full
     }

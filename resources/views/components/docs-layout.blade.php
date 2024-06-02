@@ -8,6 +8,9 @@ $links = [
 ['type' => 'header' , 'text' => 'Components'],
 ['href' => $prefix.'/components/accordion', 'text' => 'Accordion'],
 ['href' => $prefix.'/components/avatar', 'text' => 'Avatar'],
+['href' => $prefix.'/components/badge', 'text' => 'Badge'],
+['href' => $prefix.'/components/button', 'text' => 'Button'],
+['href' => $prefix.'/components/calendar', 'text' => 'Calendar'],
 ];
 @endphp
 <x-layout :title="$title ?? null">

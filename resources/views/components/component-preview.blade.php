@@ -18,7 +18,7 @@ $attributes->get('component')).'.blade.php');
         <div class="absolute top-0 right-0 p-3.5 w-full flex">
             <x-copy-button :value="$code" class="ml-auto"></x-copy-button>
         </div>
-        <div class="flex w-full justify-center h-full p-10 md:p-24 items-center">
+        <div class="grid w-full place-items-center min-h-[350px] p-10 md:p-24 ">
             @if ($attributes->has('component'))
             <x-dynamic-component :component="$attributes->get('component')" />
             @endif

@@ -45,8 +45,8 @@
     </script>
 </head>
 
-<body>
-    <x-header></x-header>
+<body class="scroll-smooth">
+    <x-header />
     <main class="max-w-screen min-h-screen">
         {!!$slot!!}
     </main>
