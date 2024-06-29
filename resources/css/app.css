@@ -1,4 +1,4 @@
-@import url(/vendor/yungifez/artisan-ui/resources/css/artisan.css);
+@import url(/vendor/yungifez/artisan-ui/dist/artisan.css);
 @import "@fortawesome/fontawesome-free/css/all.css";
 
 @tailwind base;
@@ -24,6 +24,10 @@
 
     p {
         @apply leading-7 [&:not(:first-child)]:mt-6
+    }
+
+    .component-preview p {
+        @apply mt-0
     }
 
     a {

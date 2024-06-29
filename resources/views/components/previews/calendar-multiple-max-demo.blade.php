@@ -2,6 +2,7 @@
     <x-aui::calendar
         class="rounded-md border"
         mode="multiple"
+        max="5"
         :selected="[now(), now()->addDays(2),  now()->addDays(14)]"
         @select="
             value = []

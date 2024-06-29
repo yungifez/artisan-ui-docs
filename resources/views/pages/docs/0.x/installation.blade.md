@@ -38,13 +38,19 @@ export default {
     <li>
     In your CSS file, import the project's CSS file
     <x-code-block-wrapper title="app.css" language="css">
-        @import url(/vendor/yungifez/artisan-ui/resources/css/artisan.css);
+        @import url(/vendor/yungifez/artisan-ui/dist/artisan.css);
     </x-code-block-wrapper>
     </li>
     <li>
     In your JS file, import the project's Javascript file
     <x-code-block-wrapper title="app.js" language="js">
-        import '/vendor/yungifez/artisan-ui/resources/js/artisan.js'
+        import '/vendor/yungifez/artisan-ui/dist/artisan.js'
+    </x-code-block-wrapper>
+    Or you could use the blade directive
+    <x-code-block-wrapper title="layout.blade.php" language="js">
+        @verbatim
+            @artisanScripts
+        @endverbatim
     </x-code-block-wrapper>
     </li>
     <li>

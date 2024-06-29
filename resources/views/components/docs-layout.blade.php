@@ -11,12 +11,15 @@ $links = [
 ['href' => $prefix.'/components/badge', 'text' => 'Badge'],
 ['href' => $prefix.'/components/button', 'text' => 'Button'],
 ['href' => $prefix.'/components/calendar', 'text' => 'Calendar'],
+['href' => $prefix.'/components/card', 'text' => 'Card'],
+['href' => $prefix.'/components/date-picker', 'text' => 'Date Picker'],
+['href' => $prefix.'/components/dialog', 'text' => 'Dialog'],
 ];
 @endphp
 <x-layout :title="$title ?? null">
     <div
         class="container flex-1 items-start md:grid md:grid-cols-[220px_minmax(0,1fr)] md:gap-6 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-10">
-        <aside class="fixed top-14  hidden h-[calc(100vh-3.5rem)] w-full shrink-0 md:sticky md:block">
+        <aside class="fixed top-14 hidden h-[calc(100vh-3.5rem)] w-full shrink-0 md:sticky md:block">
             <div class="relative overflow-hidden h-full pr-6 py-2">
                 @foreach ($links as $link)
                 @if (isset($link['type']) && $link['type'] == 'header')
@@ -27,7 +30,7 @@ $links = [
                 @endforeach
             </div>
         </aside>
-        <main class="relative py-6 lg:gap-10 lg:py-8 xl:grid xl:grid-cols-[1fr_300px]">
+        <main class="relative py-6 lg:gap-10 lg:py-8 xl:grid">
             <div class="space-y-2">
                 @isset($title)
                 <h1 class="scroll-m-20 text-4xl font-bold tracking-tight">

@@ -55,5 +55,6 @@
 </body>
 @vite('resources/js/app.js')
 <livewire:scripts />
+@artisanScripts
 
 </html>

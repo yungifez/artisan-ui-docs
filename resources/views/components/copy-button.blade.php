@@ -11,5 +11,5 @@
     @click="copyToClipBoard($el.getAttribute('value'))" value="{{$attributes->Get('value')}}">
     <span class="sr-only">Copy</span>
     <i class="far fa-copy" x-show="!hasCopied"></i>
-    <i class="fa fa-check" x-show="hasCopied"></i>
+    <i class="fa fa-check" x-cloak x-show="hasCopied"></i>
 </x-aui::button>
