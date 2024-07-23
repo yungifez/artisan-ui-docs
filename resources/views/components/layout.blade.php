@@ -51,7 +51,7 @@
         {!!$slot!!}
     </main>
     <aside></aside>
-    <footer></footer>
+    <x-footer />
 </body>
 @vite('resources/js/app.js')
 <livewire:scripts />

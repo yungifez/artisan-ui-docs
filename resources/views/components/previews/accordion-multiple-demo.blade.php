@@ -1,4 +1,4 @@
-<x-aui::accordion type="multiple" class="w-full">
+<x-aui::accordion type="multiple" class="w-full md:w-[70%]">
     <x-aui::accordion-item>
         <x-slot:title>What is Artisan UI</x-slot:title>
         <x-slot:content>

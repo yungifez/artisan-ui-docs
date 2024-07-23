@@ -63,7 +63,7 @@
     }
 
     .shiki {
-        @apply p-4 pt-8 rounded-lg border overflow-scroll w-full h-full
+        @apply p-4 pt-8 rounded-lg border overflow-scroll beautify-scrollbar w-full h-full
     }
 
     .shiki>code {
@@ -89,4 +89,19 @@
     .highlighted.focus:hover code>.line:not(.line.focus) {
         @apply blur-none
     }
+
+    .beautify-scrollbar::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .beautify-scrollbar::-webkit-scrollbar-corner {
+        background-color: transparent;
+    }
+
+    .beautify-scrollbar::-webkit-scrollbar-thumb {
+        @apply bg-black/20 dark:bg-muted rounded;
+    }
+
 }

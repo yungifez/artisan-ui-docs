@@ -5,16 +5,16 @@
             Beautiful components for artisans
         </h1>
         <h3
-            class="text-muted-foreground capitalize font-normal text-lg md:text-xl mt-0 tracking-wide leading-relaxed text-center md:w-8/12 no-underline mx-auto px-3">
+            class="text-foreground capitalize font-normal text-lg md:text-xl mt-0 tracking-wide leading-relaxed text-center md:w-8/12 no-underline mx-auto px-3">
             A fresh new look for blade inspired by Shadcn
         </h3>
         <div class="gap-x-2 flex">
-            <x-aui::button size="sm" class="font-bold">
+            <x-aui::button-link href="docs/0.x/index" size="sm" class="font-bold">
                 Get started
-            </x-aui::button>
-            <x-aui::button variant="outline" size="sm" class="font-bold">
+            </x-aui::button-link>
+            <x-aui::button-link href="docs/0.x/components/accordion" variant="outline" size="sm" class="font-bold">
                 <i class='fa-brands fa-github mx-2'> </i>Github
-            </x-aui::button>
+            </x-aui::button-link>
         </div>
     </section>
     <section class="px-3 text-center">

@@ -1,6 +1,6 @@
 <header
     class="sticky top-0 z-10 w-full border-b border-border/40 backdrop-blur supports-[backdrop-filter]:bg-background/60 bg-background/95">
-    <div class="container flex h-14 max-w-screen-2xl items-center">
+    <div class="px-2 flex h-14 max-w-screen-2xl items-center">
         <div class="mr-4 hidden md:flex">
             <a href="{{route('home')}}"
                 class="mr-6 flex no-underline items-center space-x-2 font-bold">{{config("app.name")}}</a>
@@ -10,11 +10,36 @@
             </nav>
         </div>
         <div class="flex flex-1 items-center justify-between space-x-2 md:justify-end">
+            <x-aui::sheet dismissable x-teleport="body">
+                <x-slot:trigger>
+                    <x-aui::button class="justify-center md:hidden" size="icon" variant="ghost">
+                        <svg stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5">
+                            <path d="M3 5H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path d="M3 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path d="M3 19H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                    </x-aui::button>
+                </x-slot:trigger>
+                <x-slot:content side="left" class="overflow-scroll beautify-scrollbar">
+                    <a href="{{route('home')}}"
+                        class="mr-6 flex no-underline items-center space-x-2 font-bold">{{config("app.name")}}</a>
+                    <x-link class="block my-2 hover:no-underline"
+                        href="{{'/docs/' . config('aui.latest-version')}}">Docs</x-link>
+                    <x-link class="block hover:no-underline"
+                        href="{{'/docs/' . config('aui.latest-version').'/components/accordion'}}">Components</x-link>
+                    <x-menu />
+                    <x-aui::sheet-footer />
+                </x-slot:content>
+            </x-aui::sheet>
             <x-aui::dialog dismissable x-teleport="body">
                 <x-slot:group class="w-full flex-1 md:w-auto md:flex-none"></x-slot:group>
                 <x-slot:trigger class="w-full">
                     <x-aui::button size="sm" variant="outline"
-                        class="md:w-40 text-muted-foreground lg:w-64 w-full flex relative justify-between items-center">
+                        class="md:w-40 text-muted-foreground bg-muted/50 lg:w-64 w-full flex relative justify-between items-center">
                         <span>
                             Search<span class="hidden lg:inline"> Documentation</span>...
                         </span>
@@ -25,10 +50,10 @@
                     </x-aui::button>
                 </x-slot:trigger>
                 <x-slot:content>
-                    hi
+                    Haven't built that yet, sorry :)
                 </x-slot:content>
             </x-aui::dialog>
-            <nav class="flex items-center gap-2">
+            <nav class="flex items-center">
                 <a target="_blank" rel="noreferrer" href="https://github.com/yungifez/artisan-ui">
                     <div
                         class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 py-2 w-9 px-0">
@@ -44,30 +69,26 @@
                     </div>
                 </a>
                 <x-aui::dropdown-menu>
-                    <x-slot:dropdown-menu-trigger>
-                        <x-aui::button size="icon" variant="ghost" type="button">
-                            <i class="fa fa-sun"></i>
-                            <span class="mx-1">/</span>
-                            <i class="fas fa-moon"></i>
+                    <x-slot:trigger>
+                        <x-aui::button class="justify-center" size="icon" variant="ghost" type="button">
+                            <i class="dark:hidden fa fa-sun"></i>
+                            <i class="hidden dark:block fas fa-moon"></i>
                         </x-aui::button>
-                        <x-slot:dropdown-menu-content class="w-40">
-                            <x-aui::dropdown-menu-item size="sm" variant="outline" type="button"
-                                class="w-full focus-visible:outline-none"
-                                x-on:click="localStorage.theme = 'light'; determineColorMode()">
-                                <p class="text-sm">Light</p>
-                            </x-aui::dropdown-menu-item>
-                            <x-aui::dropdown-menu-item size="sm" variant="outline" type="button"
-                                class="w-full focus-visible:outline-none"
-                                x-on:click="localStorage.theme = 'dark'; determineColorMode()">
-                                <p class="text-sm">Dark</p>
-                            </x-aui::dropdown-menu-item>
-                            <x-aui::dropdown-menu-item size="sm" variant="outline" type="button"
-                                class="w-full focus-visible:outline-none"
-                                x-on:click="localStorage.removeItem('theme'); determineColorMode()">
-                                <p class="text-sm">System</p>
-                            </x-aui::dropdown-menu-item>
-                        </x-slot:dropdown-menu-content>
-                    </x-slot:dropdown-menu-trigger>
+                    </x-slot:trigger>
+                    <x-slot:content class="w-40">
+                        <x-aui::dropdown-menu-item size="sm" type="button" class="w-full focus-visible:outline-none"
+                            x-on:click="localStorage.theme = 'light'; determineColorMode()">
+                            <p class="text-sm">Light</p>
+                        </x-aui::dropdown-menu-item>
+                        <x-aui::dropdown-menu-item size="sm" type="button" class="w-full focus-visible:outline-none"
+                            x-on:click="localStorage.theme = 'dark'; determineColorMode()">
+                            <p class="text-sm">Dark</p>
+                        </x-aui::dropdown-menu-item>
+                        <x-aui::dropdown-menu-item size="sm" type="button" class="w-full focus-visible:outline-none"
+                            x-on:click="localStorage.removeItem('theme'); determineColorMode()">
+                            <p class="text-sm">System</p>
+                        </x-aui::dropdown-menu-item>
+                    </x-slot:content>
                 </x-aui::dropdown-menu>
             </nav>
         </div>

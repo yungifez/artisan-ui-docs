@@ -1,3 +1,1 @@
-<div class="min-w-[100px]">
-    <x-aui::date-picker mode="single" />
-</div>
+<x-aui::date-picker class="w-96" mode="single" />

@@ -18,7 +18,7 @@ $attributes->get('component')).'.blade.php');
         <div class="absolute top-0 right-0 p-3.5 w-full flex">
             <x-copy-button :value="$code" class="ml-auto"></x-copy-button>
         </div>
-        <div class="grid w-full place-items-center min-h-[350px] p-10 md:p-24 ">
+        <div class="w-full flex justify-center items-center min-h-[350px] p-10">
             @if ($attributes->has('component'))
             <x-dynamic-component :component="$attributes->get('component')" />
             @endif
@@ -27,8 +27,8 @@ $attributes->get('component')).'.blade.php');
     <x-aui::tabs-content value="code">
         @if ($attributes->has('component'))
         <x-code-block-wrapper language="{{$attributes->get('title') ?? 'blade'}}"
-            title="{{$attributes->get('title') ?? 'Component Code'}}"
-            class="w-full h-[350px] max-h-[350px] overflow-scroll" style="margin-top: 0; margin-bottom: 0;">
+            title="{{$attributes->get('title') ?? 'Component Code'}}" class="w-full h-[350px] max-h-[350px]"
+            style="margin-top: 0; margin-bottom: 0;">
             {!!$code!!}
         </x-code-block-wrapper>
         @endif
