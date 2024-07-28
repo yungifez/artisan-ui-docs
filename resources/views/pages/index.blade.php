@@ -12,7 +12,8 @@
             <x-aui::button-link href="docs/0.x/index" size="sm" class="font-bold">
                 Get started
             </x-aui::button-link>
-            <x-aui::button-link href="docs/0.x/components/accordion" variant="outline" size="sm" class="font-bold">
+            <x-aui::button-link href="http://github.com/yungifez/artisan-ui" target="_blank" variant="outline" size="sm"
+                class="font-bold">
                 <i class='fa-brands fa-github mx-2'> </i>Github
             </x-aui::button-link>
         </div>
