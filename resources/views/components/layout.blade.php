@@ -6,18 +6,17 @@
     <title>{{$title}}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="author" content="John Doe">
-    <meta name="description" content="Description of the page less than 150 characters">
+    <meta name="description" content="{{$description ?? ''}}">
     <meta name="theme-color" content="#303030">
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{$title}}">
-    <meta property="og:description" content="Description of the page less than 150 characters">
+    <meta property="og:description" content="{{$description ?? ''}}">
     <meta property="og:image" content="/some-image.png">
     <meta property="og:url" content="/this-page.html">
     <meta property="og:site_name" content="{{config('app.name')}}">
     <meta property="og:locale" content="en_US">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="/this-page.html">
+    <meta name="twitter:url" content="/">
     <meta name="twitter:title" content="{{$title}}">
     <meta name="twitter:image" content="/image.jpg">
     <link rel="icon" type="image/png" href="/favicon.png" />
@@ -55,6 +54,5 @@
 </body>
 @vite('resources/js/app.js')
 <livewire:scripts />
-@artisanScripts
 
 </html>
