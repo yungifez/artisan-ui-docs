@@ -57,7 +57,7 @@ export default {
     Test the setup was successful
     <x-code-block-wrapper title="index.blade.php" language="blade">
         @verbatim
-        <x-aui::button></x-aui::button>
+        <x-aui::button>Hello There Youtube!</x-aui::button>
         @endverbatim
     </x-code-block-wrapper>
     </li>

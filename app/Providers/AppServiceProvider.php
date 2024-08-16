@@ -20,6 +20,7 @@ class AppServiceProvider extends ServiceProvider
             ['href' => $prefix.'/theming', 'text' => 'theming'],
             ['type' => 'header' , 'text' => 'Components'],
             ['href' => $prefix.'/components/accordion', 'text' => 'Accordion'],
+            ['href' => $prefix.'/components/alert', 'text' => 'Alert'],
             ['href' => $prefix.'/components/avatar', 'text' => 'Avatar'],
             ['href' => $prefix.'/components/badge', 'text' => 'Badge'],
             ['href' => $prefix.'/components/button', 'text' => 'Button'],

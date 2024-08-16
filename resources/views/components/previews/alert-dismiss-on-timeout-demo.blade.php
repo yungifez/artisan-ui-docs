@@ -1,0 +1,9 @@
+<x-aui::alert dismissOnTimeout timeout="5000">
+    <x-slot:icon>
+        <i class="fa-solid fa-terminal h-4 w-4"></i>
+    </x-slot:icon>
+    <x-slot:title>Heads up!</x-slot:title>
+    <x-slot:description>
+        You can add components to your app using the cli.
+    </x-slot:description>
+</x-aui::alert>
