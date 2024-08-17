@@ -1,6 +1,6 @@
 ---
 view: components.docs-layout
-title: Avatar
+title: Badge
 description: Displays a badge or a component that looks like a badge.
 ---
 <x-component-preview component="previews.badge-demo"></x-component-preview>

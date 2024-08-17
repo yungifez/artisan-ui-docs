@@ -22,6 +22,10 @@
         @apply scroll-m-20 text-2xl font-semibold tracking-tight mt-8
     }
 
+    .component-preview h3 {
+        @apply scroll-m-0 text-base font-normal tracking-normal mt-0
+    }
+
     p {
         @apply leading-7 [&:not(:first-child)]:mt-6
     }
