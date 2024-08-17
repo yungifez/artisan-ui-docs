@@ -6519,12 +6519,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yungifez/artisan-ui.git",
-                "reference": "de8b114764510251bceebb8a85f0407b11ed0e82"
+                "reference": "53deb23975e057be360c1f2a284ad84a8255bb63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yungifez/artisan-ui/zipball/de8b114764510251bceebb8a85f0407b11ed0e82",
-                "reference": "de8b114764510251bceebb8a85f0407b11ed0e82",
+                "url": "https://api.github.com/repos/yungifez/artisan-ui/zipball/53deb23975e057be360c1f2a284ad84a8255bb63",
+                "reference": "53deb23975e057be360c1f2a284ad84a8255bb63",
                 "shasum": ""
             },
             "require": {
@@ -6584,7 +6584,7 @@
                 "issues": "https://github.com/yungifez/artisan-ui/issues",
                 "source": "https://github.com/yungifez/artisan-ui/tree/main"
             },
-            "time": "2024-08-16T23:15:40+00:00"
+            "time": "2024-08-17T00:08:56+00:00"
         }
     ],
     "packages-dev": [
