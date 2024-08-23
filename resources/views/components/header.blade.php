@@ -12,7 +12,7 @@
         <div class="flex flex-1 items-center justify-between space-x-2 md:justify-end">
             <x-aui::sheet dismissable x-teleport="body">
                 <x-slot:trigger>
-                    <x-aui::button class="justify-center md:hidden" size="icon" variant="ghost">
+                    <x-aui::button aria-label="Open Menu" class="justify-center md:hidden" size="icon" variant="ghost">
                         <svg stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
                             class="h-5 w-5">
                             <path d="M3 5H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
@@ -38,7 +38,7 @@
             <x-aui::dialog dismissable x-teleport="body">
                 <x-slot:group class="w-full flex-1 md:w-auto md:flex-none"></x-slot:group>
                 <x-slot:trigger class="w-full">
-                    <x-aui::button size="sm" variant="outline"
+                    <x-aui::button aria-label="Open Search" size="sm" variant="outline"
                         class="md:w-40 text-muted-foreground bg-muted/50 lg:w-64 w-full flex relative justify-between items-center">
                         <span>
                             Search<span class="hidden lg:inline"> Documentation</span>...
@@ -70,21 +70,25 @@
                 </a>
                 <x-aui::dropdown-menu>
                     <x-slot:trigger>
-                        <x-aui::button class="justify-center" size="icon" variant="ghost" type="button">
+                        <x-aui::button aria-label="open theme selection" class="justify-center" size="icon"
+                            variant="ghost" type="button">
                             <i class="dark:hidden fa fa-sun"></i>
                             <i class="hidden dark:block fas fa-moon"></i>
                         </x-aui::button>
                     </x-slot:trigger>
                     <x-slot:content class="w-40">
-                        <x-aui::dropdown-menu-item size="sm" type="button" class="w-full focus-visible:outline-none"
+                        <x-aui::dropdown-menu-item aria-label="Select light theme" size="sm" type="button"
+                            class="w-full focus-visible:outline-none"
                             x-on:click="localStorage.theme = 'light'; determineColorMode()">
                             <p class="text-sm">Light</p>
                         </x-aui::dropdown-menu-item>
-                        <x-aui::dropdown-menu-item size="sm" type="button" class="w-full focus-visible:outline-none"
+                        <x-aui::dropdown-menu-item aria-label="Select dark theme" size="sm" type="button"
+                            class="w-full focus-visible:outline-none"
                             x-on:click="localStorage.theme = 'dark'; determineColorMode()">
                             <p class="text-sm">Dark</p>
                         </x-aui::dropdown-menu-item>
-                        <x-aui::dropdown-menu-item size="sm" type="button" class="w-full focus-visible:outline-none"
+                        <x-aui::dropdown-menu-item aria-label="Set theme based on system preference" size="sm"
+                            type="button" class="w-full focus-visible:outline-none"
                             x-on:click="localStorage.removeItem('theme'); determineColorMode()">
                             <p class="text-sm">System</p>
                         </x-aui::dropdown-menu-item>
