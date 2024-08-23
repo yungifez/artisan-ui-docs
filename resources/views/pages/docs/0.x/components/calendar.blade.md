@@ -58,7 +58,7 @@ When in range mode ie when `mode="range"`, a `from` and `to` date is to be selec
 
 <x-component-preview component="previews.calendar-range-demo"></x-component-preview>
 
-Just like in multiple mode, you can pass a mx and min. The max and min attributes represent the maximum and minimum days from the from date that can be selected respectively
+Just like in multiple mode, you can pass a `max` and `min`. The `max` and `min` attributes represent the maximum and minimum days from the from date that can be selected respectively
 
 <x-component-preview component="previews.calendar-range-max-min-demo"></x-component-preview>
 
