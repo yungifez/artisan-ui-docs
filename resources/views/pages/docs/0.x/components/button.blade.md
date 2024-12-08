@@ -5,6 +5,10 @@ description: Displays a button.
 ---
 <x-component-preview component="previews.button-demo"></x-component-preview>
 
+## Button Link
+The examples below also work with the button link component, which just uses an `a` tag under the hood 
+<x-component-preview component="previews.button-link-component-demo"></x-component-preview>
+
 ## Variant examples
 The button component comes in multiple variants
 

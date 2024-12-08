@@ -31,6 +31,7 @@ class AppServiceProvider extends ServiceProvider
             ['href' => $prefix.'/components/dropdown-menu', 'text' => 'Dropdown Menu'],
             ['href' => $prefix.'/components/input', 'text' => 'Input'],
             ['href' => $prefix.'/components/label', 'text' => 'Label'],
+            ['href' => $prefix.'/components/popover', 'text' => 'Popover'],
             ['href' => $prefix.'/components/select', 'text' => 'Select'],
             ['href' => $prefix.'/components/sheet', 'text' => 'Sheet'],
             ['href' => $prefix.'/components/switch', 'text' => 'Switch'],
