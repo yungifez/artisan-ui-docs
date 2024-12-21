@@ -9,7 +9,7 @@
                 <x-link href="{{'/docs/' . config('aui.latest-version').'/components/accordion'}}">Components</x-link>
             </nav>
         </div>
-        <div class="flex flex-1 items-center justify-between space-x-2 md:justify-end">
+        <div x-data="{searchOpened: false}" class="flex flex-1 items-center justify-between space-x-2 md:justify-end">
             <x-aui::sheet dismissable x-teleport="body">
                 <x-slot:trigger>
                     <x-aui::button aria-label="Open Menu" class="justify-center md:hidden" size="icon" variant="ghost">
@@ -35,11 +35,11 @@
                     <x-aui::sheet-footer />
                 </x-slot:content>
             </x-aui::sheet>
-            <x-aui::dialog dismissable x-teleport="body">
+            <x-aui::command-dialog @keydown="searchOpened = true" x-teleport="body" x-model="searchOpened">
                 <x-slot:group class="w-full flex-1 md:w-auto md:flex-none"></x-slot:group>
                 <x-slot:trigger class="w-full">
                     <x-aui::button aria-label="Open Search" size="sm" variant="outline"
-                        class="md:w-40 text-muted-foreground bg-muted/50 lg:w-64 w-full flex relative justify-between items-center">
+                        class="text-muted-foreground bg-muted/50 w-full flex relative justify-between items-center">
                         <span>
                             Search<span class="hidden lg:inline"> Documentation</span>...
                         </span>
@@ -49,10 +49,20 @@
                         </kbd>
                     </x-aui::button>
                 </x-slot:trigger>
-                <x-slot:content>
-                    Haven't built that yet, sorry :)
-                </x-slot:content>
-            </x-aui::dialog>
+                <x-aui::command>
+                    <x-slot:input placeholder="Type a command or search..."></x-slot:input>
+                    <x-slot:empty>No results found.</x-slot:empty>
+                    <x-slot:list>
+                        <x-aui::command-group heading="Menu">
+                            @foreach ($links as $link)
+                            <x-aui::command-item>
+                                <span>Link</span>
+                            </x-aui::command-item>
+                            @endforeach
+                        </x-aui::command-group>
+                    </x-slot:list>
+                </x-aui::command>
+            </x-aui::command-dialog>
             <nav class="flex items-center">
                 <a target="_blank" rel="noreferrer" href="https://github.com/yungifez/artisan-ui">
                     <div
