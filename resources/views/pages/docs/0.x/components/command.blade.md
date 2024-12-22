@@ -9,4 +9,5 @@ description: Fast, composable, styled command menu.
     This calendar was inspired by the [CMDK react component](https://cmdk.paco.me/)
 </x-callout>
 
+## Dialog 
 <x-component-preview component="previews.command-dialog-demo"></x-component-preview>
