@@ -26,6 +26,7 @@ class AppServiceProvider extends ServiceProvider
             ['href' => $prefix.'/components/button', 'text' => 'Button'],
             ['href' => $prefix.'/components/calendar', 'text' => 'Calendar'],
             ['href' => $prefix.'/components/card', 'text' => 'Card'],
+            ['href' => $prefix.'/components/command', 'text' => 'Command'],
             ['href' => $prefix.'/components/date-picker', 'text' => 'Date Picker'],
             ['href' => $prefix.'/components/dialog', 'text' => 'Dialog'],
             ['href' => $prefix.'/components/dropdown-menu', 'text' => 'Dropdown Menu'],
