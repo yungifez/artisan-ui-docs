@@ -35,7 +35,8 @@
                     <x-aui::sheet-footer />
                 </x-slot:content>
             </x-aui::sheet>
-            <x-aui::command-dialog @keydown="searchOpened = true" x-teleport="body" x-model="searchOpened">
+            <x-aui::command-dialog @keydown.window.cmd.k.prevent="searchOpened = true"
+                @keydown.window.ctrl.k.prevent="searchOpened = true" x-teleport="body" x-model="searchOpened">
                 <x-slot:group class="w-full flex-1 md:w-auto md:flex-none"></x-slot:group>
                 <x-slot:trigger class="w-full">
                     <x-aui::button aria-label="Open Search" size="sm" variant="outline"
@@ -55,10 +56,27 @@
                     <x-slot:list>
                         <x-aui::command-group heading="Menu">
                             @foreach ($links as $link)
-                            <x-aui::command-item>
-                                <span>Link</span>
+                            @isset($link['href'])
+                            <x-aui::command-item @click="Alpine.navigate('{{$link['href']}}')">
+                                <i class="fa-regular fa-file"></i>
+                                <span>{{$link['text']}}</span>
                             </x-aui::command-item>
+                            @endisset
                             @endforeach
+                        </x-aui::command-group>
+                        <x-aui::command-group heading="Theme">
+                            <x-aui::command-item x-on:click="localStorage.theme = 'light'; determineColorMode()">
+                                <i class="fa-regular fa-sun"></i>
+                                <span>Light</span>
+                            </x-aui::command-item>
+                            <x-aui::command-item x-on:click="localStorage.theme = 'dark'; determineColorMode()">
+                                <i class="fa-regular fa-moon"></i>
+                                <span>Dark</span>
+                            </x-aui::command-item>
+                            <x-aui::command-item x-on:click="localStorage.removeItem('theme'); determineColorMode()">
+                                <i class="fas fa-laptop"></i>
+                                <span>System</span>
+                            </x-aui::command-item>
                         </x-aui::command-group>
                     </x-slot:list>
                 </x-aui::command>
