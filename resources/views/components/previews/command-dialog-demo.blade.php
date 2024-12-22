@@ -8,7 +8,7 @@
     </p>
     <x-aui::command-dialog x-teleport="body" x-model="showDialog">
         <x-slot:trigger>
-            <x-aui::button variant="Outline" class="lg:hidden">Open</x-aui::button>
+            <x-aui::button variant="outline" class="lg:hidden">Open</x-aui::button>
         </x-slot:trigger>
         <x-aui::command>
             <x-slot:input placeholder="Type a command or search..."></x-slot:input>
