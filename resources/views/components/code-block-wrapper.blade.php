@@ -1,4 +1,4 @@
-@props(['theme' => 'tokyo-night', 'language'=>'', 'title'])
+@props(['theme' => 'ayu-dark', 'language'=>'', 'title'])
 <div {{$attributes->class(['my-4 relative'])}} x-data>
     <div class="absolute flex justify-between w-full top-0 p-3.5">
         @isset($title)
