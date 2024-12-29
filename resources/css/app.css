@@ -67,7 +67,7 @@
     }
 
     .shiki {
-        @apply p-4 pt-8 rounded-lg border overflow-scroll beautify-scrollbar w-full h-full
+        @apply p-4 pt-8 rounded-lg border overflow-scroll beautify-scrollbar w-full h-full !bg-zinc-900 dark:!bg-zinc-950
     }
 
     .shiki>code {

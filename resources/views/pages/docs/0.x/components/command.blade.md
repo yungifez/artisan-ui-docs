@@ -6,7 +6,7 @@ description: Fast, composable, styled command menu.
 <x-component-preview component="previews.command-demo"></x-component-preview>
 
 <x-callout>
-    This calendar was inspired by the [CMDK react component](https://cmdk.paco.me/)
+    This command component was inspired by the [CMDK react component](https://cmdk.paco.me/)
 </x-callout>
 
 ## Dialog 

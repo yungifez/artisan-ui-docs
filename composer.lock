@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
-            "version": "v3.14.9",
+            "version": "v3.14.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "2e805a6bd4e1aa83774316bb062703c65d0691ef"
+                "reference": "56b9bd235e3fe62e250124804009ce5bab97cc63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/2e805a6bd4e1aa83774316bb062703c65d0691ef",
-                "reference": "2e805a6bd4e1aa83774316bb062703c65d0691ef",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/56b9bd235e3fe62e250124804009ce5bab97cc63",
+                "reference": "56b9bd235e3fe62e250124804009ce5bab97cc63",
                 "shasum": ""
             },
             "require": {
@@ -76,7 +76,7 @@
             ],
             "support": {
                 "issues": "https://github.com/barryvdh/laravel-debugbar/issues",
-                "source": "https://github.com/barryvdh/laravel-debugbar/tree/v3.14.9"
+                "source": "https://github.com/barryvdh/laravel-debugbar/tree/v3.14.10"
             },
             "funding": [
                 {
@@ -88,7 +88,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-11-25T14:51:20+00:00"
+            "time": "2024-12-23T10:10:42+00:00"
         },
         {
             "name": "brick/math",
@@ -529,16 +529,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "4.0.2",
+            "version": "4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "ebaaf5be6c0286928352e054f2d5125608e5405e"
+                "reference": "b115554301161fa21467629f1e1391c1936de517"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/ebaaf5be6c0286928352e054f2d5125608e5405e",
-                "reference": "ebaaf5be6c0286928352e054f2d5125608e5405e",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/b115554301161fa21467629f1e1391c1936de517",
+                "reference": "b115554301161fa21467629f1e1391c1936de517",
                 "shasum": ""
             },
             "require": {
@@ -584,7 +584,7 @@
             ],
             "support": {
                 "issues": "https://github.com/egulias/EmailValidator/issues",
-                "source": "https://github.com/egulias/EmailValidator/tree/4.0.2"
+                "source": "https://github.com/egulias/EmailValidator/tree/4.0.3"
             },
             "funding": [
                 {
@@ -592,7 +592,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-10-06T06:47:41+00:00"
+            "time": "2024-12-27T00:36:43+00:00"
         },
         {
             "name": "fruitcake/php-cors",
@@ -2165,16 +2165,16 @@
         },
         {
             "name": "livewire/livewire",
-            "version": "v3.5.17",
+            "version": "v3.5.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/livewire.git",
-                "reference": "7bbf80d93db9b866776bf957ca6229364bca8d87"
+                "reference": "62f0fa6b340a467c25baa590a567d9a134b357da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/livewire/zipball/7bbf80d93db9b866776bf957ca6229364bca8d87",
-                "reference": "7bbf80d93db9b866776bf957ca6229364bca8d87",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/62f0fa6b340a467c25baa590a567d9a134b357da",
+                "reference": "62f0fa6b340a467c25baa590a567d9a134b357da",
                 "shasum": ""
             },
             "require": {
@@ -2229,7 +2229,7 @@
             "description": "A front-end framework for Laravel.",
             "support": {
                 "issues": "https://github.com/livewire/livewire/issues",
-                "source": "https://github.com/livewire/livewire/tree/v3.5.17"
+                "source": "https://github.com/livewire/livewire/tree/v3.5.18"
             },
             "funding": [
                 {
@@ -2237,7 +2237,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-12-06T13:41:21+00:00"
+            "time": "2024-12-23T15:05:02+00:00"
         },
         {
             "name": "maximebf/debugbar",
@@ -2412,16 +2412,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "3.8.3",
+            "version": "3.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "f01cfa96468f4c38325f507ab81a4f1d2cd93cfe"
+                "reference": "129700ed449b1f02d70272d2ac802357c8c30c58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/f01cfa96468f4c38325f507ab81a4f1d2cd93cfe",
-                "reference": "f01cfa96468f4c38325f507ab81a4f1d2cd93cfe",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/129700ed449b1f02d70272d2ac802357c8c30c58",
+                "reference": "129700ed449b1f02d70272d2ac802357c8c30c58",
                 "shasum": ""
             },
             "require": {
@@ -2514,7 +2514,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-12-21T18:03:19+00:00"
+            "time": "2024-12-27T09:25:35+00:00"
         },
         {
             "name": "nette/schema",
@@ -4315,12 +4315,12 @@
             },
             "type": "library",
             "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/contracts",
+                    "name": "symfony/contracts"
+                },
                 "branch-alias": {
                     "dev-main": "3.5-dev"
-                },
-                "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
                 }
             },
             "autoload": {
@@ -4538,12 +4538,12 @@
             },
             "type": "library",
             "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/contracts",
+                    "name": "symfony/contracts"
+                },
                 "branch-alias": {
                     "dev-main": "3.5-dev"
-                },
-                "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
                 }
             },
             "autoload": {
@@ -5816,12 +5816,12 @@
             },
             "type": "library",
             "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/contracts",
+                    "name": "symfony/contracts"
+                },
                 "branch-alias": {
                     "dev-main": "3.5-dev"
-                },
-                "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
                 }
             },
             "autoload": {
@@ -6076,12 +6076,12 @@
             },
             "type": "library",
             "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/contracts",
+                    "name": "symfony/contracts"
+                },
                 "branch-alias": {
                     "dev-main": "3.5-dev"
-                },
-                "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
                 }
             },
             "autoload": {
@@ -6641,12 +6641,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yungifez/artisan-ui.git",
-                "reference": "d107a6e0b9a12ba9ed27f0aa306a688032ac0857"
+                "reference": "3eea55a9a4e8ea37b46070be1061e9677fe3d0e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yungifez/artisan-ui/zipball/d107a6e0b9a12ba9ed27f0aa306a688032ac0857",
-                "reference": "d107a6e0b9a12ba9ed27f0aa306a688032ac0857",
+                "url": "https://api.github.com/repos/yungifez/artisan-ui/zipball/3eea55a9a4e8ea37b46070be1061e9677fe3d0e5",
+                "reference": "3eea55a9a4e8ea37b46070be1061e9677fe3d0e5",
                 "shasum": ""
             },
             "require": {
@@ -6706,7 +6706,7 @@
                 "issues": "https://github.com/yungifez/artisan-ui/issues",
                 "source": "https://github.com/yungifez/artisan-ui/tree/main"
             },
-            "time": "2024-12-22T02:39:29+00:00"
+            "time": "2024-12-29T06:54:26+00:00"
         }
     ],
     "packages-dev": [
