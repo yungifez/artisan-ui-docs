@@ -96,16 +96,16 @@
         },
         {
             "name": "brick/math",
-            "version": "0.12.2",
+            "version": "0.12.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brick/math.git",
-                "reference": "901eddb1e45a8e0f689302e40af871c181ecbe40"
+                "reference": "866551da34e9a618e64a819ee1e01c20d8a588ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brick/math/zipball/901eddb1e45a8e0f689302e40af871c181ecbe40",
-                "reference": "901eddb1e45a8e0f689302e40af871c181ecbe40",
+                "url": "https://api.github.com/repos/brick/math/zipball/866551da34e9a618e64a819ee1e01c20d8a588ba",
+                "reference": "866551da34e9a618e64a819ee1e01c20d8a588ba",
                 "shasum": ""
             },
             "require": {
@@ -144,7 +144,7 @@
             ],
             "support": {
                 "issues": "https://github.com/brick/math/issues",
-                "source": "https://github.com/brick/math/tree/0.12.2"
+                "source": "https://github.com/brick/math/tree/0.12.3"
             },
             "funding": [
                 {
@@ -152,7 +152,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-02-26T10:21:45+00:00"
+            "time": "2025-02-28T13:11:00+00:00"
         },
         {
             "name": "carbonphp/carbon-doctrine-types",
@@ -6668,17 +6668,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yungifez/artisan-ui.git",
-                "reference": "986086ea2d6ea6f51525acdbf64203a84daaf583"
+                "reference": "d446b6462b4487e452aa4fb8de48ffc10f380daf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yungifez/artisan-ui/zipball/986086ea2d6ea6f51525acdbf64203a84daaf583",
-                "reference": "986086ea2d6ea6f51525acdbf64203a84daaf583",
+                "url": "https://api.github.com/repos/yungifez/artisan-ui/zipball/d446b6462b4487e452aa4fb8de48ffc10f380daf",
+                "reference": "d446b6462b4487e452aa4fb8de48ffc10f380daf",
                 "shasum": ""
             },
             "require": {
                 "illuminate/contracts": "^10.0|^11.0|^12.0",
-                "php": "^8.2",
+                "php": "^8.1",
                 "spatie/laravel-package-tools": "^1.14.0"
             },
             "require-dev": {
@@ -6733,7 +6733,7 @@
                 "issues": "https://github.com/yungifez/artisan-ui/issues",
                 "source": "https://github.com/yungifez/artisan-ui/tree/main"
             },
-            "time": "2025-02-28T01:23:24+00:00"
+            "time": "2025-02-28T06:41:07+00:00"
         }
     ],
     "packages-dev": [
