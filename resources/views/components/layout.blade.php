@@ -26,6 +26,10 @@
     @vite('resources/css/app.css')
     @stack('head-scripts')
     <livewire:styles />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body class="scroll-smooth">
     <script>
         function determineColorMode() {
             if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -34,7 +38,6 @@
                 document.documentElement.classList.remove('dark')
             }
         }
-
         determineColorMode();
         window.addEventListener("storage", (event) => {
             if (event.key == "theme") {
@@ -42,9 +45,6 @@
             }
         });
     </script>
-</head>
-
-<body class="scroll-smooth">
     <x-header />
     <main class="max-w-screen min-h-screen">
         {!!$slot!!}

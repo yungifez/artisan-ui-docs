@@ -90,7 +90,7 @@ Here's the list of variables available for customization:
 --destructive-foreground: 210 40% 98%;
 </x-code-block-wrapper>
 
-<x-code-block-wrapper title="Used for focus ring" language="css">
+<x-code-block-wrapper title="Used for focus ring-3" language="css">
 --ring: 215 20.2% 65.1%;
 </x-code-block-wrapper>
 

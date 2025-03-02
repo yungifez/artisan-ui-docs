@@ -3,7 +3,7 @@
     @if (isset($link['type']) && $link['type'] == 'header')
     <h4 class="mb-3 mt-6 rounded-md text-sm font-semibold">{{$link['text']}}</h4>
     @else
-    <x-link wire:current.exact="!text-foreground !hover:text-foreground"
+    <x-link wire:current.exact="text-foreground! !hover:text-foreground"
         class=" mb-3 block text-sm capitalize text-muted-foreground hover:text-foreground/80"
         href="{{url($link['href'])}}">{{$link['text']}}</x-link>
     @endif

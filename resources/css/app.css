@@ -1,9 +1,97 @@
+@import 'tailwindcss';
 @import url(/vendor/yungifez/artisan-ui/dist/artisan.css);
-@import "@fortawesome/fontawesome-free/css/all.css";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@config '../../tailwind.config.js';
+
+@utility component-preview {
+    & h3 {
+        @apply scroll-m-0 text-base font-normal tracking-normal mt-0;
+    }
+
+    & p {
+        @apply mt-0;
+    }
+}
+
+@utility shiki {
+    @apply p-4 pt-8 rounded-lg border overflow-scroll beautify-scrollbar w-full h-full bg-zinc-900 dark:bg-zinc-950;
+
+    &>code {
+        @apply bg-transparent flex flex-col w-fit min-w-full;
+    }
+
+    &>code>.line {
+        @apply grow inline-block py-1 tracking-tight;
+    }
+}
+
+@utility line {
+    .shiki>code>& {
+        @apply grow inline-block py-1 tracking-tight;
+    }
+
+    &.highlight {
+        @apply bg-white/10 min-w-full pr-4 border-l-2 border-white;
+    }
+
+    &.focus {
+        @apply blur-none;
+    }
+
+    .highlighted.focus>code>&:not(.line.focus) {
+        @apply blur-xs transition duration-200;
+    }
+
+    .highlighted.focus:hover code>&:not(.line.focus) {
+        @apply blur-none;
+    }
+}
+
+@utility highlight {
+    &.line {
+        @apply bg-white/10 min-w-full pr-4 border-l-2 border-white;
+    }
+}
+
+@utility focus {
+    &.line {
+        @apply blur-none;
+    }
+
+    &.highlighted>code>.line:not(.line.focus) {
+        @apply blur-xs transition duration-200;
+    }
+
+    &.highlighted:hover code>.line:not(.line.focus) {
+        @apply blur-none;
+    }
+}
+
+@utility highlighted {
+    &.focus>code>.line:not(.line.focus) {
+        @apply blur-xs transition duration-200;
+    }
+
+    &.focus:hover code>.line:not(.line.focus) {
+        @apply blur-none;
+    }
+}
+
+@utility beautify-scrollbar {
+    &::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    &::-webkit-scrollbar-corner {
+        background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        @apply bg-black/20 dark:bg-muted rounded;
+    }
+}
 
 @layer utilities {
     code {
@@ -22,16 +110,8 @@
         @apply scroll-m-20 text-2xl font-semibold tracking-tight mt-8
     }
 
-    .component-preview h3 {
-        @apply scroll-m-0 text-base font-normal tracking-normal mt-0
-    }
-
     p {
-        @apply leading-7 [&:not(:first-child)]:mt-6
-    }
-
-    .component-preview p {
-        @apply mt-0
+        @apply leading-7 not-first:mt-6
     }
 
     a {
@@ -64,48 +144,6 @@
 
     td {
         @apply border px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right
-    }
-
-    .shiki {
-        @apply p-4 pt-8 rounded-lg border overflow-scroll beautify-scrollbar w-full h-full !bg-zinc-900 dark:!bg-zinc-950
-    }
-
-    .shiki>code {
-        @apply bg-transparent flex flex-col w-fit min-w-full
-    }
-
-    .shiki>code>.line {
-        @apply flex-grow inline-block py-1 tracking-tight
-    }
-
-    .line.highlight {
-        @apply bg-white/10 min-w-full pr-4 border-l-2 border-white
-    }
-
-    .line.focus {
-        @apply blur-none
-    }
-
-    .highlighted.focus>code>.line:not(.line.focus) {
-        @apply blur-sm transition duration-200
-    }
-
-    .highlighted.focus:hover code>.line:not(.line.focus) {
-        @apply blur-none
-    }
-
-    .beautify-scrollbar::-webkit-scrollbar {
-        width: 4px;
-        height: 4px;
-        background-color: rgba(0, 0, 0, 0);
-    }
-
-    .beautify-scrollbar::-webkit-scrollbar-corner {
-        background-color: transparent;
-    }
-
-    .beautify-scrollbar::-webkit-scrollbar-thumb {
-        @apply bg-black/20 dark:bg-muted rounded;
     }
 
 }

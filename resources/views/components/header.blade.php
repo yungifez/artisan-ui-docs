@@ -1,6 +1,6 @@
 <header
-    class="sticky top-0 z-10 w-full border-b border-border/40 backdrop-blur supports-[backdrop-filter]:bg-background/60 bg-background/95">
-    <div class="px-2 flex h-14 max-w-screen-2xl items-center">
+    class="sticky top-0 z-10 w-full border-b border-border/40 backdrop-blur-sm supports-backdrop-filter:bg-background/60 bg-background/95">
+    <div class="px-2 flex h-14 max-w-(--breakpoint-2xl) items-center">
         <div class="mr-4 hidden md:flex">
             <a href="{{route('home')}}"
                 class="mr-6 flex no-underline items-center space-x-2 font-bold">{{config("app.name")}}</a>
@@ -84,14 +84,14 @@
             <nav class="flex items-center">
                 <a target="_blank" rel="noreferrer" href="https://github.com/yungifez/artisan-ui">
                     <div
-                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 py-2 w-9 px-0">
+                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 py-2 w-9 px-0">
                         <i class="fa-brands fa-github"></i>
                         <span class="sr-only">GitHub</span>
                     </div>
                 </a>
                 <a target="_blank" rel="noreferrer" href="http://x.com/yungifez">
                     <div
-                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 py-2 w-9 px-0">
+                        class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-hidden focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 hover:bg-accent hover:text-accent-foreground h-9 py-2 w-9 px-0">
                         <i class="fa-brands fa-x-twitter"></i>
                         <span class="sr-only">Twitter</span>
                     </div>
@@ -106,17 +106,17 @@
                     </x-slot:trigger>
                     <x-slot:content class="w-40">
                         <x-aui::dropdown-menu-item aria-label="Select light theme" size="sm" type="button"
-                            class="w-full focus-visible:outline-none"
+                            class="w-full focus-visible:outline-hidden"
                             x-on:click="localStorage.theme = 'light'; determineColorMode()">
                             <p class="text-sm">Light</p>
                         </x-aui::dropdown-menu-item>
                         <x-aui::dropdown-menu-item aria-label="Select dark theme" size="sm" type="button"
-                            class="w-full focus-visible:outline-none"
+                            class="w-full focus-visible:outline-hidden"
                             x-on:click="localStorage.theme = 'dark'; determineColorMode()">
                             <p class="text-sm">Dark</p>
                         </x-aui::dropdown-menu-item>
                         <x-aui::dropdown-menu-item aria-label="Set theme based on system preference" size="sm"
-                            type="button" class="w-full focus-visible:outline-none"
+                            type="button" class="w-full focus-visible:outline-hidden"
                             x-on:click="localStorage.removeItem('theme'); determineColorMode()">
                             <p class="text-sm">System</p>
                         </x-aui::dropdown-menu-item>
