@@ -15,7 +15,7 @@ $attributes->get('component')).'.blade.php');
         </x-aui::tabs-trigger>
     </x-slot:tabs-list>
     <x-aui::tabs-content value="preview" class="min-h-[350px] component-preview relative rounded-md border">
-        <div class="absolute top-0 right-0 p-3.5 w-full flex">
+        <div class="absolute top-0 right-0 p-3.5 w-fit flex">
             <x-copy-button :value="$code" class="ml-auto"></x-copy-button>
         </div>
         <div class="w-full flex justify-center items-center min-h-[350px] p-10">
