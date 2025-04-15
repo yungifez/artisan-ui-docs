@@ -9,7 +9,7 @@
         <x-aui::dropdown-menu-label>
             My Account
         </x-aui::dropdown-menu-label>
-        <x-aui::dropdown-menu-seperator />
+        <x-aui::dropdown-menu-separator />
         <x-aui::dropdown-menu-item>
             <i class="fas fa-user mr-2 h-4 w-4"></i>
             <span>Profile</span>
@@ -30,7 +30,7 @@
             <span>Keyboard Shortcuts</span>
             <x-aui::dropdown-menu-shortcut>⌘B</x-aui::dropdown-menu-shortcut>
         </x-aui::dropdown-menu-item>
-        <x-aui::dropdown-menu-seperator />
+        <x-aui::dropdown-menu-separator />
         <x-aui::dropdown-menu-item>
             <i class="fas fa-users mr-2 h-4 w-4"></i>
             <span>Team</span>
@@ -49,7 +49,7 @@
                     <i class="fas fa-message mr-2 h-4 w-4"></i>
                     <span>Message</span>
                 </x-aui::dropdown-menu-item>
-                <x-aui::dropdown-menu-seperator />
+                <x-aui::dropdown-menu-separator />
                 <x-aui::dropdown-menu-item>
                     <i class="fas fa-plus-circle mr-2 h-4 w-4"></i>
                     <span>More...</span>
@@ -60,7 +60,7 @@
             <i class="fas fa-plus mr-2 h-4 w-4"></i>
             <span>New Team</span>
         </x-aui::dropdown-menu-item>
-        <x-aui::dropdown-menu-seperator />
+        <x-aui::dropdown-menu-separator />
         <x-aui::dropdown-menu-item>
             <i class="fa-brands fa-github mr-2 h-4 w-4"></i>
             <span>Github</span>

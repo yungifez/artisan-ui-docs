@@ -8,7 +8,7 @@ description: Displays the path to the current resource using a hierarchy of link
 
 ## Custom Separator
 
-You can use a custom item as `seperator` for `breadcrumb-separator`.
+You can use a custom item as `separator` for `breadcrumb-separator`.
 <x-component-preview component="previews.breadcrumb-custom-separator-demo"></x-component-preview>
 
 ## Dropdown

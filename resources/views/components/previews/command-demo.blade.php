@@ -17,7 +17,7 @@
             </x-aui::command-item>
 
         </x-aui::command-group>
-        <x-aui::command-seperator />
+        <x-aui::command-separator />
         <x-aui::command-group heading="Settings">
             <x-aui::command-item>
                 <i class="fa-regular fa-user"></i>
