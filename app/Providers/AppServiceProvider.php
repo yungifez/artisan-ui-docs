@@ -23,6 +23,7 @@ class AppServiceProvider extends ServiceProvider
             ['href' => $prefix.'/components/alert', 'text' => 'Alert'],
             ['href' => $prefix.'/components/avatar', 'text' => 'Avatar'],
             ['href' => $prefix.'/components/badge', 'text' => 'Badge'],
+            ['href' => $prefix.'/components/breadcrumb', 'text' => 'Breadcrumb'],
             ['href' => $prefix.'/components/button', 'text' => 'Button'],
             ['href' => $prefix.'/components/calendar', 'text' => 'Calendar'],
             ['href' => $prefix.'/components/card', 'text' => 'Card'],

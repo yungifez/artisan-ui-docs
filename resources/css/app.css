@@ -11,6 +11,10 @@
     & p {
         @apply mt-0;
     }
+
+    & a {
+        @apply no-underline;
+    }
 }
 
 @utility shiki {
