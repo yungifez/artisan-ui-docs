@@ -83,7 +83,7 @@
 
 @utility beautify-scrollbar {
     &::-webkit-scrollbar {
-        width: 4px;
+        width: 7px;
         height: 4px;
         background-color: rgba(0, 0, 0, 0);
     }
