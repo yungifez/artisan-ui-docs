@@ -93,7 +93,7 @@
     }
 
     &::-webkit-scrollbar-thumb {
-        @apply bg-black/20 dark:bg-muted rounded;
+        @apply bg-muted dark:bg-muted rounded;
     }
 }
 

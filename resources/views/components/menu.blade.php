@@ -1,4 +1,5 @@
-<div x-persist="menu" class="relative overflow-y-scroll md:max-h-[calc(100vh-3.5rem)] pr-6 py-2" wire:scroll>
+<div x-persist="menu" class="relative beautify-scrollbar overflow-y-scroll md:max-h-[calc(100vh-3.5rem)] pr-6 py-2"
+    wire:scroll>
     @foreach ($links as $link)
     @if (isset($link['type']) && $link['type'] == 'header')
     <h4 class="mb-3 mt-6 rounded-md text-sm font-semibold">{{$link['text']}}</h4>
