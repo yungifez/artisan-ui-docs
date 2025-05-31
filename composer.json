@@ -11,6 +11,14 @@
         {
             "type": "vcs",
             "url": "https://github.com/yungifez/folio-markdown"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/yungifez/tailwind-merge-laravel.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/yungifez/tailwind-merge-php.git"
         }
     ],
     "require": {

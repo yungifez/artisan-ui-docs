@@ -6,11 +6,11 @@ $attributes->get('component')).'.blade.php');
 @endphp
 @endif
 <x-aui::tabs class="relative my-3 mr-auto w-full" defaultValue="preview">
-    <x-slot:tabs-list class="w-full">
-        <x-aui::tabs-trigger value="preview" class="w-full">
+    <x-slot:tabs-list class=" bg-transparent">
+        <x-aui::tabs-trigger value="preview" class="w-fit">
             Preview
         </x-aui::tabs-trigger>
-        <x-aui::tabs-trigger value="code" class="w-full">
+        <x-aui::tabs-trigger value="code" class="w-fit">
             Code
         </x-aui::tabs-trigger>
     </x-slot:tabs-list>

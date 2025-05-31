@@ -19,6 +19,19 @@ To install this project, you need:
 To set up the project:
 
 <ul class="flex flex-col gap-5">
+    <p>For now, add these to the repository section of your `composer.json`</p>
+    <x-code-block-wrapper language="json">
+"repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/yungifez/tailwind-merge-laravel.git"
+    },
+    {
+        "type": "vcs",
+        "url": "https://github.com/yungifez/tailwind-merge-php.git"
+    }
+],
+    </x-code-block-wrapper>
     <li>
         Install the package using Composer
         <x-code-block-wrapper language="bash">
