@@ -3,7 +3,7 @@
         :selected="[now(), now()->addDays(2),  now()->addDays(14)]" @change="
             value = []
             $event.detail.value.forEach(
-                element => value.push(element.toISOString().split('T')[0])
+                element => value.push(element)
             )
         " />
     <p x-text="'Selected dates are '+value.toString()" class="my-2 break-words"></p>
