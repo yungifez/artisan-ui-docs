@@ -166,7 +166,7 @@ class ExampleTest extends TestCase
     {
         $this->get('/docs/1.x/components/alert')
             ->assertOk()
-            ->assertSee('<h5 data-slot="alert-title"', false);
+            ->assertSee('<h2 data-slot="alert-title"', false);
     }
 
     public function test_calendar_preview_renders_each_day_as_one_alpine_root(): void
